@@ -117,6 +117,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;min-width:0;overflow-wr
 @media print{.evidence-button,.receipt-step-buttons,#evidence-dialog{display:none!important}.receipt-case-grid{grid-template-columns:1fr 1.4fr}}
 
 .term-notes{margin:0;padding-left:1.4em;display:grid;gap:4px;font-size:14px;line-height:1.6;color:var(--color-muted)}.term-notes b{color:var(--color-ink);font-weight:700}sup{font-size:.65em;line-height:0}
+.flow-list{margin:0;padding-left:1.2em;display:grid;gap:var(--space-sm)}.flow-list li{font-size:20px;line-height:1.65}.flow-list li::marker{color:var(--color-muted)}@media(max-width:850px){.flow-list li{font-size:19px}}
 </style></head>
 <body><header><a href="#s1" class="brand">Yoshigi Huang <span>案例提供</span></a><div class="tools"><button id="notes-toggle" aria-expanded="false" aria-controls="notes">講者備註</button><button id="fullscreen">全螢幕</button></div></header>
 <main id="main">
@@ -129,7 +130,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;min-width:0;overflow-wr
 <p class="case-intro">用北美新倉庫 的入庫確認案例，走一遍需求、串接、驗收與交接。</p>
 <div class="workflow-buttons" role="group" aria-label="選擇交付階段">
 <button type="button" data-step="0" aria-pressed="true" aria-controls="flow-panel">1　釐清需求</button><button type="button" data-step="1" aria-pressed="false" aria-controls="flow-panel">2　安排分工</button><button type="button" data-step="2" aria-pressed="false" aria-controls="flow-panel">3　開始測試</button><button type="button" data-step="3" aria-pressed="false" aria-controls="flow-panel">4　找出問題</button><button type="button" data-step="4" aria-pressed="false" aria-controls="flow-panel">5　修正後再驗</button><button type="button" data-step="5" aria-pressed="false" aria-controls="flow-panel">6　交給團隊</button></div>
-<div id="flow-panel" class="flow-panel" aria-live="polite"><div><h3 id="flow-title"></h3><p id="flow-input"></p><p id="flow-output"></p></div><div class="flow-gate"><span>這一步要確認</span><p id="flow-gate"></p><small id="flow-evidence"></small><button type="button" id="flow-source" class="evidence-button" data-evidence="ac">查看這一步的依據</button></div></div>
+<div id="flow-panel" class="flow-panel" aria-live="polite"><div><h3 id="flow-title"></h3><ul class="flow-list"><li id="flow-input"></li><li id="flow-output"></li></ul></div><div class="flow-gate"><span>這一步要確認</span><p id="flow-gate"></p><small id="flow-evidence"></small><button type="button" id="flow-source" class="evidence-button" data-evidence="ac">查看這一步的依據</button></div></div>
 <div class="role-strip"><p><strong>系統做什麼</strong>接收、處理事件，留下紀錄</p><p><strong>AI 協助什麼</strong>專案 Agent 參與開發、查核與技術回報</p><p><strong>人確認什麼</strong>定義標準、核對結果、決定通過範圍</p></div>
 <div class="case-bottom"><p class="footnote">流程依驗收標準、專案總表與會議紀錄整理。訂單與人員已匿名化。</p><button type="button" id="open-agent">看看 Agent 與人怎麼合作</button></div>
 </section>
