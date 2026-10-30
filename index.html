@@ -121,10 +121,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;min-width:0;overflow-wr
 <main id="main">
 <section id="s1" class="slide hero" aria-labelledby="h1"><div class="hero-copy"><h1 id="h1">AI Agent<br>導入實例</h1><p class="lead">把 AI 當成新同事：<br>先交代清楚，再讓 AI 與團隊共同合作。</p><a href="#s2" class="primary">開始操作</a></div><div class="handoff" aria-label="AI 工作交接流程"><div class="stage stage-one"><span>交辦</span><p>目標與依據</p></div><div class="stage stage-two"><span>驗證</span><p>證據與邊界</p></div><div class="stage stage-three"><span>交接</span><p>負責人與下一步</p></div><div class="receipt"><span>今天的工作</span><strong>新倉庫訂單測試</strong><p>來源：紀錄由<strong style="display:inline;font:inherit;font-weight:700;margin:0">AI彙整</strong><br>缺漏：待確認的測試<br>下一步：交給人審查</p><b>重要決定由人確認</b></div></div><p class="footnote">Ai Agent 工作流程示範　／　倉庫串接案例擴充</p></section>
 <section id="s2" class="slide" aria-labelledby="h2"><div><h2 id="h2">AI 仍可能出錯</h2><p class="lead" style="margin-top:var(--space-sm)">將問題環節寫入流程，設定檢核點</p></div><div class="rows"><div class="row"><strong>發現遺漏</strong><p>找出漏掉哪一項，在專案裡補充 Context</p></div><div class="row"><strong>追加檢核</strong><p>提供 SOP 與驗收標準（rubric）進行評分（eval）</p></div><div class="row"><strong>再次驗證</strong><p>查看評分依據（evidence），確保修正完成</p></div></div><p class="footnote">導入 AI 助理，Step 0 → 1 的檢查流程</p></section>
-<section id="s3" class="slide" aria-labelledby="h3"><h2 id="h3">從固定、重複的<br>工作開始。</h2><p class="lead">例如：每天整理訂單測試紀錄與待確認問題。</p><div class="checks"><p><span>✓</span>團隊共用同一份資料</p><p><span>✓</span>產出格式說得清楚</p><p><span>✓</span>資料與權限有人管理</p><p><span>✓</span>重要決定有人審查</p></div><p class="footnote">先選一個可控範圍的專案，再決定需要 Agent 和人的分工。</p></section>
+<section id="s3" class="slide" aria-labelledby="h3"><h2 id="h3">從固定、重複的<br>工作開始</h2><p class="lead">例如：每天整理訂單測試紀錄與待確認問題。</p><div class="checks"><p><span>✓</span>團隊共用同一份資料</p><p><span>✓</span>產出格式說得清楚</p><p><span>✓</span>資料與權限有人管理</p><p><span>✓</span>重要決定有人審查</p></div><p class="footnote">先選一個可控範圍的專案，再決定需要 Agent 和人的分工。</p></section>
 <section id="s4" class="slide" aria-labelledby="h4"><h2 id="h4">先說清楚：<br>什麼叫做完成？</h2><div class="task-sheet"><dl><div><dt>目標</dt><dd>整理今天的測試異常，供明天會議討論。</dd></div><div><dt>依據</dt><dd>指定測試紀錄與驗收清單。</dd></div><div><dt>產出</dt><dd>狀態、證據、負責人與下一步。</dd></div><div><dt>邊界</dt><dd>找不到證據就標「待確認」，保留來源。</dd></div></dl></div><p class="footnote">交辦示例；資料存取與操作權限，需先確認資安規範，與資料治理方針。</p></section>
 <section id="s5" class="slide case-slide" aria-labelledby="h5">
-<h2 id="h5">從需求開始，<br>帶團隊走到驗收。</h2>
+<h2 id="h5">從需求開始，<br>帶團隊走到驗收</h2>
 <p class="case-intro">用北美新倉庫 的入庫確認案例，走一遍需求、串接、驗收與交接。</p>
 <div class="workflow-buttons" role="group" aria-label="選擇交付階段">
 <button type="button" data-step="0" aria-pressed="true" aria-controls="flow-panel">1　釐清需求</button><button type="button" data-step="1" aria-pressed="false" aria-controls="flow-panel">2　安排分工</button><button type="button" data-step="2" aria-pressed="false" aria-controls="flow-panel">3　開始測試</button><button type="button" data-step="3" aria-pressed="false" aria-controls="flow-panel">4　找出問題</button><button type="button" data-step="4" aria-pressed="false" aria-controls="flow-panel">5　修正後再驗</button><button type="button" data-step="5" aria-pressed="false" aria-controls="flow-panel">6　交給團隊</button></div>
@@ -133,7 +133,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;min-width:0;overflow-wr
 <div class="case-bottom"><p class="footnote">流程依驗收標準、專案總表與會議紀錄整理。訂單與人員已匿名化。</p><button type="button" id="open-agent">看看 Agent 與人怎麼合作</button></div>
 </section>
 <section id="s6" class="slide case-slide" aria-labelledby="h6">
-<h2 id="h6">用一筆入庫，走完修正與驗收。</h2>
+<h2 id="h6">用一筆入庫，走完修正與驗收</h2>
 <div class="case-switch" role="group" aria-label="選擇案例路徑"><button type="button" data-case="inbound" aria-pressed="true" aria-controls="case-inbound">主案例：入庫確認</button><button type="button" data-case="outbound" aria-pressed="false" aria-controls="case-outbound">分支：出貨回傳</button></div>
 <div id="case-inbound" class="case-panel">
 <div class="receipt-case-grid"><div class="quantity-board receipt-summary"><p>匿名入庫單 A</p><div class="receipt-quantity"><b>100</b><span>件入庫，接著確認系統結果</span></div><strong class="verdict">重送後數量一致，文件記錄結案</strong><p class="receipt-batch">同批核對：入庫單 B +1,000／入庫單 C +500</p><button type="button" class="evidence-button" data-evidence="semantics">收貨確認與庫存，怎麼分開驗？</button></div>
@@ -145,7 +145,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;min-width:0;overflow-wr
 <p class="footnote">依 2026/4/17 前的事件及專案總表整理。每個步驟可查看匿名化證據摘要。數字與代號為示意，非實際營運數據。</p>
 </section>
 <section id="s7" class="slide case-slide" aria-labelledby="h7">
-<h2 id="h7">讓接手的人知道，<br>下一步該怎麼做。</h2>
+<h2 id="h7">讓接手的人知道，<br>下一步該怎麼做</h2>
 <div class="handover-grid"><div><h3>哪些已經確認？</h3><p>入庫單 A–C 重送與對數結案。<br>4/17 雙站冒煙測試通過，<br>庫存交易批次 Z 已簽核。</p><button type="button" class="evidence-button" data-evidence="handover">查看完成範圍</button></div><div><h3>哪些還要追？</h3><p>批次 Y：19 良品／1 損壞的內部覆核。<br>批次 X：後續驗證。<br>14 筆出貨單：修復與重測。</p><p class="handover-caption">每項保留負責角色與下一步。</p></div><div><h3>如何確認通過？</h3><p>API 交易進入審核佇列，<br>物流人員對照流程與紀錄；<br>有疑問以信件釐清，正確才點 Pass。</p><button type="button" class="evidence-button" data-evidence="signoff">查看 批次 Z 與簽核 SOP</button></div></div>
 <div class="handover-proof"><strong>完成狀態</strong><p>4/17 已完成 SOP 審查。三筆入庫結案與批次 Z 簽核分開記錄，確保數據紀錄同步。</p></div>
 <p class="lead">目標是，進入整合驗收測試後，如有新加入同仁，是否可以直接上手，查找正確資料。</p>
